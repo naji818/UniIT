@@ -10,7 +10,7 @@ Runtime `07:54.00` · 786 words · target delivery 140 wpm
 
 > **Tone.** Professional, warm, inspiring, slightly thought-provoking. Never scolding, never hype.
 
-> **Delivery.** Land a full beat on each line break below — the timings assume a short pause after every sentence. Lines marked _(hold)_ need a longer pause for the picture to breathe.
+> **Delivery.** Land a full beat on each line break below — the timings assume a short pause after every sentence. Timecodes are the target in-points; the read should never feel rushed to hit them.
 
 ---
 

@@ -12,7 +12,7 @@ How to take this repository from an approved script to a finished 3D animated fi
 | Shot list / storyboard, 78 shots | ✅ Complete |
 | Per-shot generation prompts | ✅ Complete |
 | Art direction bible | ✅ Complete |
-| Animatic (previz cut, `build/animatic.mp4`) | ✅ Rendered |
+| Animatic (previz cut, `deliverables/animatic.mp4`) | ✅ Rendered |
 | Voice-over recording | ⛔ Not started — needs TTS credits or a voice artist |
 | Music and sound design | ⛔ Not started |
 | Final 3D shot generation | ⛔ Not started — needs generation credits |
@@ -123,7 +123,7 @@ mcp__artlist__get_balance       # credits or remaining free generations
 
 ## The animatic
 
-`build/animatic.mp4` — 7:54, 1920×1080, 24 fps.
+`deliverables/animatic.mp4` — 7:54, 1920×1080, 24 fps.
 
 It is **previz, not the film**: abstract graphic stand-ins that lock composition,
 timing, camera intent, typography and narration pacing. It exists so the edit,
@@ -167,7 +167,8 @@ tools/build_animatic_data.py  Generates animatic/data.js
 tools/render_animatic.py      Renders the animatic to MP4
 
 animatic/                     Canvas previz engine
-build/                        Render output (not committed)
+deliverables/                 Rendered animatic and subtitle track
+build/                        Render scratch (not committed)
 ```
 
 Everything in `script/` is generated. Edit `production/timeline.json` and rebuild.

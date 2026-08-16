@@ -24,7 +24,7 @@ A complete, validated pre-production package and a rendered animatic.
 | **[`script/prompt-sheet.md`](script/prompt-sheet.md)** | 78 self-contained text-to-video prompts in cut order |
 | **[`docs/art-direction.md`](docs/art-direction.md)** | The look, the character, and the seven non-negotiable rules |
 | **[`docs/production-guide.md`](docs/production-guide.md)** | How to get from here to a finished film |
-| **`build/animatic.mp4`** | The previz cut — full length, fully timed |
+| **`deliverables/animatic.mp4`** | The previz cut — 7:54, 1920×1080, fully timed |
 
 ## What is not here
 
@@ -39,7 +39,7 @@ estimate.
 
 ## The animatic
 
-`build/animatic.mp4` is a real, watchable 7:54 cut: every shot at its exact
+`deliverables/animatic.mp4` is a real, watchable 7:54 cut: every shot at its exact
 duration, every narration line as a timed caption, every on-screen title in its
 final wording and reveal pattern, and abstract graphic stand-ins carrying each
 shot's composition and camera intent.

@@ -15,13 +15,15 @@ How to take this repository from an approved script to a finished 3D animated fi
 | Animatic (previz cut, `deliverables/animatic.mp4`) | ✅ Rendered |
 | Voice-over recording | ⛔ Not started — needs TTS credits or a voice artist |
 | Music and sound design | ⛔ Not started |
-| Final 3D shot generation | ⛔ Not started — needs generation credits |
+| Look-dev reference frames, 7 shots | ✅ Generated (see `docs/lookdev.md`) |
+| Final 3D shot generation | ⛔ Not started — account balance now 0 |
 | Online edit and grade | ⛔ Not started |
 
-**The blocker is generation capacity, not the plan.** At the time of writing,
-the connected Higgsfield account had 1.05 credits on a free plan and the Artlist
-account had no free generations remaining. Every input a render needs is in
-this repository and ready to run.
+**The blocker is generation capacity, not the plan.** The connected Higgsfield
+account's full balance of 1.05 credits was spent on the seven look-dev frames in
+`docs/lookdev.md`, which validate the art direction against a real image model.
+The balance is now 0, and the Artlist account has no free generations remaining.
+Every other input a render needs is in this repository and ready to run.
 
 ---
 

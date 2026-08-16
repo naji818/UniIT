@@ -23,15 +23,17 @@ A complete, validated pre-production package and a rendered animatic.
 | **[`script/shot-list.md`](script/shot-list.md)** | All 78 shots — camera, action, on-screen text, creative warnings |
 | **[`script/prompt-sheet.md`](script/prompt-sheet.md)** | 78 self-contained text-to-video prompts in cut order |
 | **[`docs/art-direction.md`](docs/art-direction.md)** | The look, the character, and the seven non-negotiable rules |
+| **[`docs/lookdev.md`](docs/lookdev.md)** | 7 generated reference frames validating the art direction |
 | **[`docs/production-guide.md`](docs/production-guide.md)** | How to get from here to a finished film |
 | **`deliverables/animatic.mp4`** | The previz cut — 7:54, 1920×1080, fully timed |
 
 ## What is not here
 
 **The finished 3D film.** Rendering ~7:54 of character-consistent cinematic
-animation needs on the order of 200–250 generations. The connected accounts had
-1.05 credits (Higgsfield, free plan) and no remaining free generations (Artlist),
-so no shots could be generated.
+animation needs on the order of 200–250 generations. The account's full balance
+of 1.05 credits was spent on seven look-dev reference frames
+([`docs/lookdev.md`](docs/lookdev.md)) that validate the art direction against a
+real image model; the balance is now 0.
 
 Everything a render needs is prepared and validated. See
 [`docs/production-guide.md`](docs/production-guide.md) for the pipeline and cost

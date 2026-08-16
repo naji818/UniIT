@@ -1,0 +1,45 @@
+You have entered university to study Computer Science. You may be excited. You may believe the next three or four years will teach you everything you need to become a software engineer.
+
+There is something worth understanding from day one: Computer Science is one of the fastest-changing fields in the world, and your degree is not the finish line. It is the starting point.
+
+This film follows a first-year Sri Lankan undergraduate from their first day on campus to the moment they graduate into a landscape that has already moved. It is not a warning against university — the foundations a degree gives you are genuinely valuable. It is about what you build on top of them.
+
+What it covers:
+
+• Why programming fundamentals outlast any single language — and why Java still matters even as Python grows
+• How web development, cloud and AI keep reshaping what "modern" means
+• Why mathematics, statistics and probability become powerful once you want to understand AI rather than only use it
+• The difference between passing an examination and being able to solve a real problem
+• Using AI honestly: as a tutor, reviewer and assistant — never as a substitute for understanding what you submit
+• Building a portfolio from year one instead of year four
+• Quantum computing, and why it is worth watching without overclaiming
+
+The most important thing you learn at university may not be a programming language. It may be the ability to adapt.
+
+Made for students beginning a Computer Science degree — in Sri Lanka and anywhere else.
+
+
+── CHAPTERS ──
+
+0:00 Introduction
+0:11 Your first day
+0:40 What your degree gives you
+1:11 Technology does not wait for the syllabus
+1:34 Java to Python — why concepts transfer
+1:57 How web development keeps evolving
+2:22 AI is a family of technologies
+2:49 Why mathematics and statistics matter
+3:31 Theory and application together
+3:57 What the industry actually asks for
+4:28 Using AI without cheating yourself
+5:14 Build your portfolio from year one
+5:42 The speed of technology
+6:06 Quantum computing
+6:50 The message to you
+7:43 Computer Science is a lifelong journey
+
+── ABOUT ──
+
+Runtime 7:54. Written and produced independently.
+
+#ComputerScience #University #SriLanka #Programming #AI #CareerAdvice

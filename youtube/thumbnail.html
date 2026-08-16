@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Thumbnail</title>
+<style>html,body{margin:0;background:#000}canvas{display:block}</style>
+</head>
+<body>
+<canvas id="t" width="1280" height="720"></canvas>
+<script>
+/* YouTube thumbnail generator, 1280x720.
+ * Designed to survive being shrunk to ~210px wide in the sidebar: very few
+ * words, very large type, hard contrast between warm campus and cool tech.
+ */
+const W = 1280, H = 720;
+const g = document.getElementById('t').getContext('2d');
+const FONT = 'Liberation Sans, DejaVu Sans, sans-serif';
+
+const C = {
+  gold: '#F5B95C', ochre: '#C98A3C', cyan: '#4FD8E8',
+  chalk: '#FFF6E4', indigo: '#131A3A', ink: '#07080F',
+};
+
+const hex = (c, a) => {
+  const n = parseInt(c.slice(1), 16);
+  return `rgba(${n >> 16 & 255},${n >> 8 & 255},${n & 255},${a})`;
+};
+const rnd = (s => () => (s = Math.imul(s ^ s >>> 15, 1 | s), ((s ^ s >>> 14) >>> 0) / 4294967296))(1337);
+
+function fit(text, size, maxW, track, weight) {
+  let s = size;
+  for (let i = 0; i < 14; i++) {
+    g.font = `${weight} ${s}px ${FONT}`;
+    const w = [...text].reduce((a, ch) => a + g.measureText(ch).width + track, 0) - track;
+    if (w <= maxW) break;
+    s *= (maxW / w) * 0.99;
+  }
+  return s;
+}
+
+function tracked(text, x, y, size, color, track, weight, align) {
+  g.font = `${weight} ${size}px ${FONT}`;
+  g.textBaseline = 'middle';
+  const chars = [...text];
+  let total = chars.reduce((a, ch) => a + g.measureText(ch).width + track, 0) - track;
+  let cx = align === 'left' ? x : x - total / 2;
+  // Heavy drop shadow so type holds up against the bright horizon.
+  g.fillStyle = 'rgba(0,0,0,0.72)';
+  let sx = cx;
+  chars.forEach(ch => { g.fillText(ch, sx + 5, y + 6); sx += g.measureText(ch).width + track; });
+  g.fillStyle = color;
+  chars.forEach(ch => { g.fillText(ch, cx, y); cx += g.measureText(ch).width + track; });
+  return total;
+}
+
+function glow(x, y, r, color, a) {
+  const gr = g.createRadialGradient(x, y, 0, x, y, r);
+  gr.addColorStop(0, hex(color, 0.9 * a));
+  gr.addColorStop(0.45, hex(color, 0.3 * a));
+  gr.addColorStop(1, hex(color, 0));
+  g.fillStyle = gr;
+  g.fillRect(x - r, y - r, r * 2, r * 2);
+}
+
+function student(x, y, h, color) {
+  const u = h / 100;
+  g.fillStyle = color;
+  g.beginPath(); g.arc(x, y - 88 * u, 11 * u, 0, 7); g.fill();
+  g.beginPath();
+  g.moveTo(x - 13 * u, y - 74 * u);
+  g.quadraticCurveTo(x, y - 80 * u, x + 13 * u, y - 74 * u);
+  g.lineTo(x + 11 * u, y - 38 * u); g.lineTo(x + 9 * u, y); g.lineTo(x + 2 * u, y);
+  g.lineTo(x + 1 * u, y - 36 * u); g.lineTo(x - 1 * u, y - 36 * u);
+  g.lineTo(x - 2 * u, y); g.lineTo(x - 9 * u, y); g.lineTo(x - 11 * u, y - 38 * u);
+  g.closePath(); g.fill();
+  g.beginPath(); g.roundRect(x - 9 * u, y - 72 * u, 18 * u, 26 * u, 4 * u); g.fill();
+}
+
+/** Shared backdrop: sunrise horizon, campus left, technology right.
+ *  Horizon sits high so the lower third carries the figure and a lit path
+ *  rather than dead ground, and the figure is offset right of the type. */
+function backdrop() {
+  const sky = g.createLinearGradient(0, 0, 0, H);
+  sky.addColorStop(0, '#0B1130');
+  sky.addColorStop(0.30, '#37406F');
+  sky.addColorStop(0.50, '#B87F55');
+  sky.addColorStop(0.615, '#F5BE74');
+  sky.addColorStop(1, '#241D3A');
+  g.fillStyle = sky; g.fillRect(0, 0, W, H);
+
+  const hy = H * 0.615;
+  const FX = W * 0.735;                       // figure sits right of the headline
+  glow(FX, hy, 400, C.gold, 0.95);
+  g.fillStyle = '#FFF6E0';
+  g.beginPath(); g.arc(FX, hy, 54, 0, 7); g.fill();
+
+  // Technology skyline, right side — taller and denser than the campus.
+  for (let i = 0; i < 40; i++) {
+    const x = W * 0.50 + rnd() * W * 0.52;
+    const h = 40 + rnd() * 250;
+    g.fillStyle = hex(C.cyan, 0.14 + rnd() * 0.26);
+    g.fillRect(x, hy - h, 12 + rnd() * 28, h);
+    if (rnd() > 0.6) glow(x, hy - h, 52, C.cyan, 0.26);
+  }
+  // Campus rooftops, left side.
+  for (let i = 0; i < 16; i++) {
+    const x = rnd() * W * 0.46, y = hy + 2;
+    g.fillStyle = hex('#5A3320', 0.8);
+    g.beginPath(); g.moveTo(x - 50, y); g.lineTo(x, y - 30); g.lineTo(x + 50, y);
+    g.closePath(); g.fill();
+    g.fillStyle = hex('#E4DCCB', 0.22); g.fillRect(x - 44, y, 88, 46);
+  }
+
+  // Ground.
+  g.fillStyle = '#1B1430';
+  g.beginPath(); g.moveTo(0, H);
+  for (let x = 0; x <= W; x += 24) {
+    g.lineTo(x, hy + 20 + Math.sin(x / 190) * 12 + Math.sin(x / 58) * 4);
+  }
+  g.lineTo(W, H); g.closePath(); g.fill();
+
+  // Lit path running to the figure, so the lower third reads as depth.
+  const pg = g.createLinearGradient(0, H, 0, hy);
+  pg.addColorStop(0, hex(C.gold, 0.32));
+  pg.addColorStop(1, hex(C.gold, 0));
+  g.fillStyle = pg;
+  g.beginPath();
+  g.moveTo(FX - 24, hy + 24); g.lineTo(FX + 24, hy + 24);
+  g.lineTo(FX + 250, H); g.lineTo(FX - 250, H);
+  g.closePath(); g.fill();
+
+  student(FX, hy + 40, 250, '#0A0614');
+  glow(FX, hy + 10, 150, C.gold, 0.34);
+
+  const vg = g.createRadialGradient(W / 2, H * 0.44, H * 0.26, W / 2, H * 0.44, H * 1.0);
+  vg.addColorStop(0, 'rgba(0,0,0,0)');
+  vg.addColorStop(1, 'rgba(0,0,0,0.66)');
+  g.fillStyle = vg; g.fillRect(0, 0, W, H);
+}
+
+/** Dark scrim over the left column, where all the type lives. */
+function plate() {
+  const gr = g.createLinearGradient(0, 0, W * 0.80, 0);
+  gr.addColorStop(0, 'rgba(3,4,11,0.90)');
+  gr.addColorStop(0.55, 'rgba(3,4,11,0.72)');
+  gr.addColorStop(1, 'rgba(3,4,11,0)');
+  g.fillStyle = gr; g.fillRect(0, 0, W * 0.80, H);
+}
+
+const X = W * 0.055;        // left type margin
+const COL = W * 0.60;       // type column width, clear of the figure
+
+const VARIANTS = {
+  // A — the question, biggest and simplest read.
+  a() {
+    backdrop(); plate();
+    const kick = fit('COMPUTER SCIENCE', 40, COL, 10, 700);
+    tracked('COMPUTER SCIENCE', X, H * 0.20, kick, hex(C.cyan, 0.95), 10, 700, 'left');
+    const s1 = fit('ARE YOU', 128, COL, 2, 800);
+    tracked('ARE YOU', X, H * 0.375, s1, C.chalk, 2, 800, 'left');
+    const s2 = fit('READY FOR', 128, COL, 2, 800);
+    tracked('READY FOR', X, H * 0.535, s2, C.chalk, 2, 800, 'left');
+    const s3 = fit('THE FUTURE?', 128, COL, 2, 800);
+    tracked('THE FUTURE?', X, H * 0.695, s3, C.gold, 2, 800, 'left');
+  },
+
+  // B — the thesis. Most likely to make a student stop scrolling.
+  b() {
+    backdrop(); plate();
+    const kick = fit('YOUR CS DEGREE IS', 46, COL, 9, 700);
+    tracked('YOUR CS DEGREE IS', X, H * 0.215, kick, hex(C.chalk, 0.92), 9, 700, 'left');
+    const s1 = fit('NOT THE', 150, COL, 2, 800);
+    tracked('NOT THE', X, H * 0.415, s1, C.gold, 2, 800, 'left');
+    const s2 = fit('FINISH', 150, COL, 2, 800);
+    tracked('FINISH', X, H * 0.585, s2, C.chalk, 2, 800, 'left');
+    const s3 = fit('LINE', 150, COL, 2, 800);
+    tracked('LINE', X, H * 0.755, s3, C.chalk, 2, 800, 'left');
+  },
+
+  // C — warmest, aimed squarely at a first-year on day one.
+  c() {
+    backdrop(); plate();
+    const kick = fit('DAY ONE OF UNIVERSITY', 40, COL, 8, 700);
+    tracked('DAY ONE OF UNIVERSITY', X, H * 0.185, kick, hex(C.cyan, 0.95), 8, 700, 'left');
+    const s1 = fit('WHAT', 140, COL, 2, 800);
+    tracked('WHAT', X, H * 0.355, s1, C.chalk, 2, 800, 'left');
+    const s2 = fit('NOBODY', 140, COL, 2, 800);
+    tracked('NOBODY', X, H * 0.515, s2, C.chalk, 2, 800, 'left');
+    const s3 = fit('TELLS YOU', 140, COL, 2, 800);
+    tracked('TELLS YOU', X, H * 0.675, s3, C.gold, 2, 800, 'left');
+    const s4 = fit('ABOUT A CS DEGREE', 40, COL, 7, 700);
+    tracked('ABOUT A CS DEGREE', X, H * 0.815, s4, hex(C.chalk, 0.88), 7, 700, 'left');
+  },
+};
+
+window.draw = v => { VARIANTS[v](); return true; };
+window.__ready = true;
+</script>
+</body>
+</html>

@@ -37,6 +37,7 @@ cd tools
 python3 rebalance.py     # refit shot durations around the new narration
 python3 check_timing.py  # must PASS before anything else proceeds
 python3 build_docs.py
+python3 build_subtitles.py
 python3 build_animatic_data.py
 ```
 
@@ -150,6 +151,7 @@ production/timeline.json      Single source of truth — scenes, narration, shot
 production/animatic_viz.json  Shot -> animatic visual module map (animatic only)
 
 script/narration.md           Timed narration script          (generated)
+script/narration.srt          Subtitle track                  (generated)
 script/shot-list.md           Shot list and storyboard        (generated)
 script/prompt-sheet.md        78 generation prompts           (generated)
 
@@ -160,6 +162,7 @@ tools/timeline_lib.py         Loader and narration timing model
 tools/check_timing.py         Runtime and narration-fit validation
 tools/rebalance.py            Refits shot durations to the narration
 tools/build_docs.py           Generates the three script documents
+tools/build_subtitles.py      Generates the SRT subtitle track
 tools/build_animatic_data.py  Generates animatic/data.js
 tools/render_animatic.py      Renders the animatic to MP4
 

@@ -19,6 +19,7 @@ A complete, validated pre-production package and a rendered animatic.
 | | |
 | --- | --- |
 | **[`script/narration.md`](script/narration.md)** | The timed narration, cue by cue |
+| **[`script/narration.srt`](script/narration.srt)** | Subtitle track, 131 captions, ready for the final cut |
 | **[`script/shot-list.md`](script/shot-list.md)** | All 78 shots — camera, action, on-screen text, creative warnings |
 | **[`script/prompt-sheet.md`](script/prompt-sheet.md)** | 78 self-contained text-to-video prompts in cut order |
 | **[`docs/art-direction.md`](docs/art-direction.md)** | The look, the character, and the seven non-negotiable rules |
@@ -66,6 +67,7 @@ cd tools
 python3 rebalance.py            # refit shot durations around the narration
 python3 check_timing.py         # validate runtime and narration fit
 python3 build_docs.py           # regenerate script/
+python3 build_subtitles.py      # regenerate the subtitle track
 python3 build_animatic_data.py  # regenerate the animatic data bundle
 ```
 

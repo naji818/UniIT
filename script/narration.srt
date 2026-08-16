@@ -1,0 +1,571 @@
+1
+00:00:10,850 --> 00:00:14,779
+You have entered university
+to study Computer Science.
+
+2
+00:00:14,829 --> 00:00:17,043
+You may be excited.
+
+3
+00:00:17,093 --> 00:00:23,440
+You may believe that the next three or
+four years will teach you everything you
+
+4
+00:00:23,480 --> 00:00:26,593
+need to become a software engineer.
+
+5
+00:00:26,643 --> 00:00:31,857
+But there is something you need
+to understand from day one.
+
+6
+00:00:31,907 --> 00:00:37,121
+Computer Science is one of the
+fastest-changing fields in the world.
+
+7
+00:00:39,850 --> 00:00:44,207
+Your university will give you something
+extremely valuable: foundations.
+
+8
+00:00:44,257 --> 00:00:46,471
+You will learn programming.
+
+9
+00:00:46,521 --> 00:00:50,439
+You will learn algorithms, databases,
+operating systems, networking, software
+
+10
+00:00:50,479 --> 00:00:53,450
+engineering, mathematics
+and computer science theory.
+
+11
+00:00:53,500 --> 00:00:55,714
+You will complete assignments.
+
+12
+00:00:55,764 --> 00:00:57,979
+You will sit examinations.
+
+13
+00:00:58,029 --> 00:01:01,529
+You will eventually
+complete a major project.
+
+14
+00:01:01,579 --> 00:01:05,507
+But your degree is not the finish line.
+
+15
+00:01:05,557 --> 00:01:08,200
+It is the starting point.
+
+16
+00:01:10,850 --> 00:01:14,779
+Technology does not wait for
+your university syllabus.
+
+17
+00:01:14,829 --> 00:01:16,829
+Programming languages evolve.
+
+18
+00:01:16,879 --> 00:01:18,879
+Frameworks disappear.
+
+19
+00:01:18,929 --> 00:01:21,571
+New frameworks replace old ones.
+
+20
+00:01:21,621 --> 00:01:23,621
+Development methodologies change.
+
+21
+00:01:23,671 --> 00:01:27,171
+Cloud computing changes
+how applications are built.
+
+22
+00:01:27,221 --> 00:01:31,579
+Artificial intelligence is changing
+how software itself is created.
+
+23
+00:01:34,350 --> 00:01:36,564
+Java is still important.
+
+24
+00:01:36,614 --> 00:01:41,829
+Learning one programming language teaches
+you concepts that transfer to others.
+
+25
+00:01:41,879 --> 00:01:47,803
+But do not make the mistake of believing
+that mastering one language means you have
+
+26
+00:01:47,843 --> 00:01:49,664
+mastered programming.
+
+27
+00:01:49,714 --> 00:01:51,929
+Learn programming concepts first.
+
+28
+00:01:51,979 --> 00:01:54,621
+Then learn languages as tools.
+
+29
+00:01:57,350 --> 00:01:59,993
+Web development is another example.
+
+30
+00:02:00,043 --> 00:02:04,522
+Do not spend your entire university
+journey learning yesterday's development
+
+31
+00:02:04,562 --> 00:02:05,257
+stack.
+
+32
+00:02:05,307 --> 00:02:07,307
+Understand the fundamentals.
+
+33
+00:02:07,357 --> 00:02:09,357
+But keep asking:
+
+34
+00:02:09,407 --> 00:02:12,050
+What is being used today?
+
+35
+00:02:12,100 --> 00:02:14,743
+What is becoming important tomorrow?
+
+36
+00:02:14,793 --> 00:02:16,793
+And most importantly:
+
+37
+00:02:16,843 --> 00:02:19,914
+Can I build something with it?
+
+38
+00:02:22,350 --> 00:02:25,850
+Artificial Intelligence is
+not one single technology.
+
+39
+00:02:25,900 --> 00:02:28,971
+It is a family of technologies.
+
+40
+00:02:29,021 --> 00:02:31,021
+Machine learning.
+
+41
+00:02:31,071 --> 00:02:33,071
+Deep learning.
+
+42
+00:02:33,121 --> 00:02:35,121
+Data science.
+
+43
+00:02:35,171 --> 00:02:37,171
+Computer vision.
+
+44
+00:02:37,221 --> 00:02:39,221
+Natural language processing.
+
+45
+00:02:39,271 --> 00:02:41,271
+Generative AI.
+
+46
+00:02:41,321 --> 00:02:46,536
+And increasingly, AI agents capable
+of using tools and performing tasks.
+
+47
+00:02:48,850 --> 00:02:53,207
+And here is something many
+students discover too late.
+
+48
+00:02:53,257 --> 00:02:55,257
+Mathematics matters.
+
+49
+00:02:55,307 --> 00:02:57,307
+Statistics matters.
+
+50
+00:02:57,357 --> 00:02:59,357
+Probability matters.
+
+51
+00:02:59,407 --> 00:03:01,407
+Linear algebra matters.
+
+52
+00:03:01,457 --> 00:03:06,842
+You may wonder why you need them
+when modern libraries can perform the
+
+53
+00:03:06,882 --> 00:03:08,814
+calculations for you.
+
+54
+00:03:08,864 --> 00:03:11,079
+The answer is simple.
+
+55
+00:03:11,129 --> 00:03:13,129
+Tools can calculate.
+
+56
+00:03:13,179 --> 00:03:17,536
+But you need to understand
+what the calculation means.
+
+57
+00:03:17,586 --> 00:03:22,955
+If you want to move beyond simply using
+AI tools and start understanding AI, data
+
+58
+00:03:22,995 --> 00:03:27,631
+science and machine learning, mathematics
+and statistics become powerful
+
+59
+00:03:27,671 --> 00:03:28,800
+foundations.
+
+60
+00:03:31,350 --> 00:03:33,564
+Do not misunderstand this.
+
+61
+00:03:33,614 --> 00:03:35,614
+Theory is important.
+
+62
+00:03:35,664 --> 00:03:39,593
+But theory without application
+can leave you unprepared.
+
+63
+00:03:39,643 --> 00:03:42,714
+Your goal should not simply be:
+
+64
+00:03:42,764 --> 00:03:44,979
+'I passed the examination.'
+
+65
+00:03:45,029 --> 00:03:47,243
+Your goal should be:
+
+66
+00:03:47,293 --> 00:03:54,221
+'I understand the concept — and I
+can use it to solve a real problem.'
+
+67
+00:03:56,850 --> 00:04:00,350
+The technology industry
+does not simply ask:
+
+68
+00:04:00,400 --> 00:04:03,043
+'What subjects did you study?'
+
+69
+00:04:03,093 --> 00:04:05,093
+It increasingly asks:
+
+70
+00:04:05,143 --> 00:04:07,357
+'What can you build?'
+
+71
+00:04:07,407 --> 00:04:10,050
+'What problems can you solve?'
+
+72
+00:04:10,100 --> 00:04:12,314
+'Can you learn quickly?'
+
+73
+00:04:12,364 --> 00:04:15,436
+'Can you work with modern tools?'
+
+74
+00:04:15,486 --> 00:04:18,557
+'Can you collaborate with other people?'
+
+75
+00:04:18,607 --> 00:04:20,607
+And increasingly:
+
+76
+00:04:20,657 --> 00:04:25,871
+'Can you use AI effectively without
+losing your ability to think?'
+
+77
+00:04:28,350 --> 00:04:30,993
+Artificial intelligence
+creates another challenge.
+
+78
+00:04:31,043 --> 00:04:34,114
+You can now generate an essay.
+
+79
+00:04:34,164 --> 00:04:36,164
+Generate code.
+
+80
+00:04:36,214 --> 00:04:38,214
+Generate diagrams.
+
+81
+00:04:38,264 --> 00:04:40,264
+Generate explanations.
+
+82
+00:04:40,314 --> 00:04:43,386
+Even generate an entire project structure.
+
+83
+00:04:43,436 --> 00:04:46,507
+But there is a dangerous shortcut:
+
+84
+00:04:46,557 --> 00:04:50,057
+using AI without understanding
+what it produces.
+
+85
+00:04:50,107 --> 00:04:54,036
+AI should accelerate learning
+— not replace learning.
+
+86
+00:04:54,086 --> 00:04:59,300
+Use AI as a tutor, coding assistant,
+reviewer and brainstorming partner.
+
+87
+00:04:59,350 --> 00:05:03,707
+But make sure you can
+explain what you submit.
+
+88
+00:05:03,757 --> 00:05:09,246
+Otherwise, you may pass an assignment
+while failing to develop the skill the
+
+89
+00:05:09,286 --> 00:05:11,971
+assignment was supposed to teach.
+
+90
+00:05:14,350 --> 00:05:19,564
+Do not wait until your final
+year to build your portfolio.
+
+91
+00:05:19,614 --> 00:05:21,614
+Start early.
+
+92
+00:05:21,664 --> 00:05:23,664
+Build small projects.
+
+93
+00:05:23,714 --> 00:05:25,714
+Break them.
+
+94
+00:05:25,764 --> 00:05:27,764
+Fix them.
+
+95
+00:05:27,814 --> 00:05:29,814
+Publish them.
+
+96
+00:05:29,864 --> 00:05:32,079
+Document what you learned.
+
+97
+00:05:32,129 --> 00:05:37,075
+Your GitHub repositories, projects and
+practical experience can become evidence
+
+98
+00:05:37,115 --> 00:05:39,057
+of what you actually know.
+
+99
+00:05:41,850 --> 00:05:44,493
+The uncomfortable truth is this:
+
+100
+00:05:44,543 --> 00:05:50,905
+The technology you learn in your first
+year may not be the technology you use
+
+101
+00:05:50,945 --> 00:05:52,757
+when you graduate.
+
+102
+00:05:52,807 --> 00:05:55,450
+And that is completely normal.
+
+103
+00:05:55,500 --> 00:05:59,857
+Your most important skill is not
+memorising today's technology.
+
+104
+00:05:59,907 --> 00:06:03,836
+It is learning how to learn
+tomorrow's technology.
+
+105
+00:06:06,350 --> 00:06:09,850
+And there is another
+technology worth watching.
+
+106
+00:06:09,900 --> 00:06:11,900
+Quantum computing.
+
+107
+00:06:11,950 --> 00:06:17,593
+It is still an emerging field, and its
+practical impact remains uncertain.
+
+108
+00:06:17,643 --> 00:06:23,458
+But if quantum computing reaches the level
+where it can solve important real-world
+
+109
+00:06:23,498 --> 00:06:28,857
+problems at scale, it could create
+an entirely new chapter in computing.
+
+110
+00:06:28,907 --> 00:06:33,783
+Perhaps one day, your final-year
+project will not simply be another web
+
+111
+00:06:33,823 --> 00:06:34,979
+application.
+
+112
+00:06:35,029 --> 00:06:38,957
+Perhaps you will explore a
+quantum computing problem.
+
+113
+00:06:39,007 --> 00:06:46,134
+If the technology matures enough — and if
+you are prepared — you could be part of
+
+114
+00:06:46,174 --> 00:06:47,650
+that journey.
+
+115
+00:06:50,350 --> 00:06:54,279
+You came to university to
+study Computer Science.
+
+116
+00:06:54,329 --> 00:06:57,829
+Do not leave with only a degree.
+
+117
+00:06:57,879 --> 00:07:00,950
+Leave with the ability to learn.
+
+118
+00:07:01,000 --> 00:07:03,643
+Leave knowing how to program.
+
+119
+00:07:03,693 --> 00:07:06,764
+Leave knowing how to solve problems.
+
+120
+00:07:06,814 --> 00:07:09,886
+Leave understanding mathematics,
+data and technology.
+
+121
+00:07:09,936 --> 00:07:11,936
+Learn the fundamentals.
+
+122
+00:07:11,986 --> 00:07:13,986
+Use modern tools.
+
+123
+00:07:14,036 --> 00:07:16,036
+Experiment with AI.
+
+124
+00:07:16,086 --> 00:07:18,086
+Build real projects.
+
+125
+00:07:18,136 --> 00:07:20,350
+Do not fear change.
+
+126
+00:07:20,400 --> 00:07:25,487
+Because the biggest technology you
+will learn at university may not be a
+
+127
+00:07:25,527 --> 00:07:27,329
+programming language.
+
+128
+00:07:27,379 --> 00:07:30,879
+It may be the ability to adapt.
+
+129
+00:07:30,929 --> 00:07:32,929
+And remember:
+
+130
+00:07:32,979 --> 00:07:37,336
+The future of computing
+has not been written yet.
+
+131
+00:07:37,386 --> 00:07:40,457
+Perhaps you will help write it.
+

@@ -1,0 +1,98 @@
+{
+  "_comment": "Maps each shot to an animatic visual module and variant. Animatic-only rendering hints; the creative source of truth stays in timeline.json.",
+  "shots": {
+    "OPEN-01": ["canopy", 0],
+    "OPEN-02": ["gate", 0],
+
+    "S1-01": ["gate", 1],
+    "S1-02": ["gate", 2],
+    "S1-03": ["corridor", 0],
+    "S1-04": ["desk", 0],
+    "S1-05": ["corridor", 1],
+    "S1-06": ["desk", 1],
+
+    "S2-01": ["corridor", 2],
+    "S2-02": ["desk", 2],
+    "S2-03": ["corridor", 3],
+    "S2-04": ["columns", 0],
+    "S2-05": ["desk", 3],
+    "S2-06": ["doorway", 0],
+
+    "S3-01": ["rail", 0],
+    "S3-02": ["rail", 1],
+    "S3-03": ["rail", 2],
+    "S3-04": ["rail", 3],
+    "S3-05": ["rail", 4],
+
+    "S4-01": ["desk", 4],
+    "S4-02": ["solids", 0],
+    "S4-03": ["solids", 1],
+    "S4-04": ["panels", 0],
+    "S4-05": ["solids", 2],
+
+    "S5-01": ["unfold", 0],
+    "S5-02": ["unfold", 1],
+    "S5-03": ["unfold", 2],
+    "S5-04": ["unfold", 3],
+    "S5-05": ["unfold", 4],
+
+    "S6-01": ["aitree", 0],
+    "S6-02": ["aitree", 1],
+    "S6-03": ["pipeline", 0],
+    "S6-04": ["aitree", 2],
+    "S6-05": ["aitree", 3],
+
+    "S7-01": ["mathfield", 0],
+    "S7-02": ["mathfield", 1],
+    "S7-03": ["mathfield", 2],
+    "S7-04": ["mathfield", 3],
+    "S7-05": ["mathfield", 4],
+
+    "S8-01": ["paths", 0],
+    "S8-02": ["paths", 1],
+    "S8-03": ["paths", 2],
+    "S8-04": ["paths", 3],
+
+    "S9-01": ["globe", 0],
+    "S9-02": ["globe", 1],
+    "S9-03": ["panels", 1],
+    "S9-04": ["globe", 2],
+    "S9-05": ["globe", 3],
+
+    "S10-01": ["fracture", 0],
+    "S10-02": ["fracture", 1],
+    "S10-03": ["fracture", 2],
+    "S10-04": ["fracture", 3],
+    "S10-05": ["chain", 0],
+    "S10-06": ["chain", 1],
+
+    "S11-01": ["tower", 0],
+    "S11-02": ["tower", 1],
+    "S11-03": ["tower", 2],
+    "S11-04": ["tower", 3],
+    "S11-05": ["tower", 4],
+
+    "S12-01": ["rail", 5],
+    "S12-02": ["rail", 6],
+    "S12-03": ["rail", 7],
+    "S12-04": ["rail", 8],
+
+    "S13-01": ["qubit", 0],
+    "S13-02": ["qubit", 1],
+    "S13-03": ["qubit", 2],
+    "S13-04": ["qubit", 3],
+    "S13-05": ["qubit", 4],
+    "S13-06": ["panels", 2],
+
+    "FIN-01": ["gate", 3],
+    "FIN-02": ["horizon", 0],
+    "FIN-03": ["horizon", 1, "sequence"],
+    "FIN-04": ["horizon", 2],
+    "FIN-05": ["horizon", 3],
+    "FIN-06": ["horizon", 4],
+    "FIN-07": ["horizon", 5],
+
+    "END-01": ["endcard", 0],
+    "END-02": ["endcard", 1]
+  }
+}

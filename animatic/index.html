@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Animatic — You Enter University to Study Computer Science</title>
+<style>
+  html, body { margin: 0; background: #000; height: 100%; overflow: hidden; }
+  #stage { display: block; width: 100vw; height: 100vh; object-fit: contain; }
+</style>
+</head>
+<body>
+<canvas id="stage"></canvas>
+<script src="data.js"></script>
+<script src="engine.js"></script>
+<script>
+  // Interactive preview when opened directly in a browser. The offline render
+  // ignores this and drives renderAt() frame by frame instead.
+  if (!location.search.includes('static')) {
+    const t0 = performance.now();
+    (function loop() {
+      renderAt((performance.now() - t0) / 1000, { hud: location.search.includes('hud') });
+      requestAnimationFrame(loop);
+    })();
+  }
+</script>
+</body>
+</html>
